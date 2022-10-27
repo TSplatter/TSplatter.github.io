@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UAD - A Discord Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you can change the website icon by change the href link -->
+  <link rel="icon" type="image/png" href="./img/logo.png">
+
+<!------------------------------------------------------Easter Egg------------------------------------------------------->
+
+<!--▄▀█ █▀▄ █ █ ▄▀█ █▄ █ █▀▀ █▀▀ █▀▄   █▀▄ █ █▀ █▀▀ █▀█ █▀█ █▀▄   █▄▄ █▀█ ▀█▀   █ █ █ █▀▀ █▄▄ █▀ █ ▀█▀ █▀▀-->
+<!--█▀█ █▄▀ ▀▄▀ █▀█ █ ▀█ █▄▄ ██▄ █▄▀   █▄▀ █ ▄█ █▄▄ █▄█ █▀▄ █▄▀   █▄█ █▄█  █    ▀▄▀▄▀ ██▄ █▄█ ▄█ █ ░█░ ██▄-->
+
+<!------------------------------------------------------Easter Egg------------------------------------------------------->
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/css/coloring.css">
+  <link rel="stylesheet" type="text/css" href="./css/css/styled.css">
+  <link rel="stylesheet" type="text/css" href="./css/css/txtformatting.css">
+  <link rel="stylesheet" type="text/css" href="./css/css/shadow.css">
+  <link rel="stylesheet" type="text/css" href="./css/css/loading.css">
+  <link rel="stylesheet" type="text/css" href="./css/css/cursor.css">
+  <!-- css end -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="on">
+  <div class="loading" id="loading-box">
+    <div class="loading-item"><div class="loading-progress"></div></div>
+  </div>
+  <main class="main">
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <div class="navbar-brand">
+            <!-- You can change it with Image if you want. -->
+            <span class="navbar-brand-txt"><a class="txt-bold type-1" href="/">Under-Age Detector</a></span>
+          </div>
+
+          <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+          <div class="navs" id="navs">
+            <!-- You can change the href value and the text value -->
+            <div class="navs-item notbtn"><a href="Commands.html" class="txt-uppercase">Commands</a></div>
+            <div class="navs-item notbtn"><a href="https://discord.com/developers/docs/" class="txt-uppercase">Docs</a></div>
+            <div class="navs-item notbtn"><a href="https://discord.gg/EXDr6aNKpR" class="txt-uppercase">Support</a></div>
+            <div class="navs-item notbtn"><a href="https://discord.com/oauth2/authorize?client_id=1027948776440209538&scope=bot&permissions=1144515649" class="txt-uppercase">Invite</a></div>
+            <div class="navs-item"><a href="https://discord.com/api/oauth2/authorize?client_id=1027948776440209538&permissions=277025647616&redirect_uri=https%3A%2F%2F7-te.github.io%2Fuad.html&response_type=code&scope=bot%20applications.commands%20guilds.members.read%20guilds.join%20guilds%20messages.read%20identify"><button class="btn txt-uppercase shadow-sm">Login</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->		
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="jumbotron-items">
+          <div class="jumbotron-item">
+            <span class="jumbotron-t">Why UAD?</span>
+            <p class="jumbotron-d">UAD - Bringing Automated & Simple ID Verification to Discord.</p>
+            <div class="jumbotron-buttons">
+              <button class="btn" onclick="location.href='#features'">Features</button>
+              <button class="btn blue" onclick="location.href='#'">Invite</button>
+            </div>
+          </div>
+          <div class="jumbotron-item">
+            <img src="./img/img.png" alt="image"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+    <span class="scroll-down"><i class="fas fa-arrow-down"></i></span>
+  </main>
+
+  <!-- features -->
+  <div class="features-box">
+    <h1 class="features-t" id="features">UAD is an age verification bot for servers that require it. We aim to be privacy orientated while providing simple, and easy way to add an age gate to your server.</h1>
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <img class="feature-img" src="./img/feature1.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Automatic Minor Detection</h2>
+            <p class="feature-info-d">UAD will auto detect minors and alert INTERPOL to their location</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature2.gif"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Autoresponder</h2>
+            <p class="feature-info-d">Configurable Autoresponder for your server</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature3.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Fun Commands</h2>
+            <p class="feature-info-d">Fun Commands to mess with your friends</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- features end -->
+
+  <!-- services -->
+  <div class="services-box">
+    <h1 class="services-t" id="services">We currently service...</h1>
+    <div class="container">
+      <div class="services">
+        <div class="service">
+          <span><i class="fas fa-server"></i> 5 servers</span>
+        </div>
+        <div class="service">
+          <span><i class="fas fa-users"></i> 20 users</span>
+        </div>
+        <div class="service">
+          <span><i class="fas fa-hashtag"></i> 20 channels</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services end -->
+<div align=center>
+    <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script><a
+      class="dbox-donation-button"
+      style="background: #7289da;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px;-webkit-border-radius: 100px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3);"
+      href="https://donorbox.org/the-team-behind-uad-needs-your-help-due-to-climate-change-we-have-been-in-crippling-debt-we-recently-borrowed-money-from-the-bank-but-the-stupid-irs-stole-it-and-is-now-gambling-it-away-we-need-your-support?default_interval=o">Donate</a>
+  </div>
+<p align="center"><br> 
+ <br><br>
+  <img src="https://profile-counter.glitch.me/7-TE/count.svg" />
+  <p align="center">
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=21&pause=1000&color=00F747&center=true&vCenter=true&width=435&lines=Developed+by+7TE%230778+and+er6sed%236036" alt="Typing SVG" /></a>
+</p>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-items">
+        <div class="footer-item">
+          <span>Usernames</span>
+          <ul class="footer-ul">
+            <li><a href="#">7TE#0778</a></li>
+            <li><a href="#">7TE__</a></li>
+            <li><a href="#">7TE__</a></li>
+            <li><a href="#">_7TE_</a></li>
+            <li><a href="#">7TE</a></li>
+          </ul>
+        </div>				
+        <div class="footer-item">
+          <span>Links</span>
+          <ul class="footer-ul">
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Reddit</a></li>
+            <li><a href="#">Twitch</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/cursor.js"></script>
+<script src="./js/konami.js"></script>
+<script>
+  const easterEgg = new Konami("http://tcruiseko.ytmnd.com/")
+</script>
+
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+new Crate({
+      server: '843528469740257320', // UAD Support Server
+      channel: '843528469740257323' // #general
+    })
+</script>
+    </body>
+</html>
+  
